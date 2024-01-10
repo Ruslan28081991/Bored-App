@@ -13,7 +13,9 @@ const addText = () => {
 
 const changeStyle = () => {
   const containerNode = document.querySelector(".container");
-  containerNode.classList = "green";
+  if (containerNode.classList !== "green") {
+    containerNode.classList.add("green");
+  }
 };
 
 const changeTitle = () => {
